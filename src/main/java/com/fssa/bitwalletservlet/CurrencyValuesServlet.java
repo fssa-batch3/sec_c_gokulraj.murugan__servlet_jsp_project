@@ -30,7 +30,7 @@ public class CurrencyValuesServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
-	 */
+	 */  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("application/json");
@@ -61,9 +61,12 @@ public class CurrencyValuesServlet extends HttpServlet {
 
 			// Send the JSON response to the client
 			out.print(jsonResponse.toString());
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
-			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+//			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+			out.println("Error");
 		} finally {
 			out.close();
 		}

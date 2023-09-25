@@ -20,26 +20,13 @@ public class UpdateCurrencyServlet extends HttpServlet {
 		try {
 			String name = request.getParameter("name");
 			String symbol = request.getParameter("symbol");
-			int rank = Integer.parseInt(request.getParameter("rank"));
-			double price = Double.parseDouble(request.getParameter("price"));
-			double marketCap = Double.parseDouble(request.getParameter("marketCap"));
-			double totalSupply = Double.parseDouble(request.getParameter("totalSupply"));
-			double maximumSupply = Double.parseDouble(request.getParameter("maximumSupply"));
-			double volume24h = Double.parseDouble(request.getParameter("volume24h"));
-			double allTimeHigh = Double.parseDouble(request.getParameter("allTimeHigh"));
-			double allTimeLow = Double.parseDouble(request.getParameter("allTimeLow"));
+			String logo = request.getParameter("logo");
 
 			Currency currency = new Currency();
 			currency.setName(name);
 			currency.setSymbol(symbol);
-			currency.setRank(rank);
-			currency.setPrice(price);
-			currency.setMarketCap(marketCap);
-			currency.setTotalSupply(totalSupply);
-			currency.setMaximumSupply(maximumSupply);
-			currency.setVolume24h(volume24h);
-			currency.setAllTimeHigh(allTimeHigh);
-			currency.setAllTimeLow(allTimeLow);
+			currency.setLogo(logo);
+			
 
 			// Update the currency record in the database
 			boolean updated = CurrencyService.updateCurrency(currency);

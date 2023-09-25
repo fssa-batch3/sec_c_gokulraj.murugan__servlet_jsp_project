@@ -1,7 +1,6 @@
 package com.fssa.bitwalletservlet;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,34 +8,58 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.fssa.bitwallet.dao.UserDAO;
 import com.fssa.bitwallet.errors.DaoException;
-import com.fssa.bitwallet.model.Currency;
-import com.fssa.bitwallet.service.CurrencyService;
+import com.fssa.bitwallet.model.User;
 
-@WebServlet("/CurrencyServlet")
-public class ReadCurrency extends HttpServlet {
+/**
+ * Servlet implementation class ReadProfileServlet
+ */
+@WebServlet("/ReadProfileServlet")
+public class ReadProfileServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public ReadProfileServlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
 
-			List<Currency> currencyList = CurrencyService.readCurrency();
+			HttpSession session = request.getSession(false);
 
-			request.setAttribute("currencyList", currencyList);
+			String email = (String) session.getAttribute("email");
+
+			
+			User user = UserDAO.getUserByEmail(email);
+
+			request.setAttribute("user", user);
 
 		} catch (DaoException e) {
 			e.printStackTrace();
 			request.setAttribute("errorMessage", "Database error: " + e.getMessage());
 		}
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/chart.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/profile.jsp");
 		dispatcher.forward(request, response);
 	}
 
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
+
 }

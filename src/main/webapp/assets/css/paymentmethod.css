@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: #EDF3FD;
+	width: 1440px;
+	height: 850px;
+}
+
+.all {
+	border: 1px solid black;
+	margin: 22px 0px 0px 350px;
+	width: 77%;
+	height: 800px;
+}

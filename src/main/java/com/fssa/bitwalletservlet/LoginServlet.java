@@ -3,7 +3,6 @@ package com.fssa.bitwalletservlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,24 +24,32 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 
 		PrintWriter out = response.getWriter();
+		
 		if (email == null || "".equals(email)) {
 			out.println("Invalid Email");
 			response.sendRedirect("login.jsp?errorMessage=Invalid Email");
 		}
+		
 
 		else if (password == null || "".equals(password) || password.length() < 6) {
 			response.sendRedirect("login.jsp?errorMessage=Invalid Password");
 		} 
 		else {
-			out.println("Email and password is valid");
-			HttpSession session = request.getSession();
-			session.setAttribute("loggedInEmail", email);
-//			request.setAttribute("loggedInEmail", email); // Only the next page or servlet can access the request scope attribute values. 
-			RequestDispatcher dispatcher = request.getRequestDispatcher("i.jsp");
 			
-			dispatcher.forward(request, response);
+			HttpSession session = request.getSession();
+			
+			session.setAttribute("email", email);
+			
+			response.sendRedirect("ReadProfileServlet");
+			
 		}
 
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		super.doGet(req, resp);
 	}
 
 }

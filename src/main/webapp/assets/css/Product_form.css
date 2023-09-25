@@ -1,0 +1,90 @@
+body{
+    background-color:#4062ff;
+}
+
+.popup{
+    /* border:  1px solid black; */
+    width: 390px;
+    border-radius: 10px;
+    height: 520px;
+    background-color: white;
+    margin: 100px 0px 0px 500px;
+    overflow: hidden;
+}
+
+.currency{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.currency p{
+    font-size: 20px;
+    margin-left: -30px;
+}
+
+#close_btn{
+    font-size: 20px;
+    margin: 0px -30px 0px 0px;
+}
+#search{
+    height: 40px;
+    width: 300px;
+    margin: 20px 0px 0px 40px;
+}
+.coinss{
+    overflow: scroll;
+    height: 360px;
+    /* width: 100%; */
+}
+.one_coin{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 99%;
+    height: 60px;
+    margin: 10px 0px 2px 0px;
+
+}
+.one_coin:hover{
+    background-color: #D3D3D3   ;
+}
+
+.one_coin .img_logo{
+    margin-left: -20px;
+    width: 50px;
+    height: 50px;
+}
+.one_coin h3{
+    font-size: 20px;
+    font-weight: 500; 
+  margin-left: -20px;
+}
+
+.one_coin p{
+    /* font-size: 15px; */
+    font-weight: 300;
+    margin-left: -20px;
+}
+
+
+/* pop up starts */
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+}
+
+/* ::-webkit-scrollbar-track {
+    border-radius: 10px;
+} */
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+
+
+

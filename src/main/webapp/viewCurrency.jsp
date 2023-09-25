@@ -15,14 +15,9 @@
 		<thead>
 			<tr>
 				<th>Name</th>
-				<th>Price</th>
-				<th>Rank</th>
-				<th>All Time High</th>
-				<th>Market Cap</th>
-				<th>Total Supply</th>
-				<th>Maximum Supply</th>
-				<th>Volume 24H</th>
-				<th>All Time High</th>
+				<th>Symbol</th>
+				<th>Logo</th>
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -32,14 +27,8 @@
 			%>
 			<tr>
 				<td><%=currencyList.getName()%></td>
-				<td><%=currencyList.getPrice()%></td>
-				<td><%=currencyList.getRank()%></td>
-				<td><%=currencyList.getAllTimeHigh()%></td>
-				<td><%=currencyList.getMarketCap()%></td>
-				<td><%=currencyList.getTotalSupply()%></td>
-				<td><%=currencyList.getMaximumSupply()%></td>
-				<td><%=currencyList.getVolume24h()%></td>
-				<td><%=currencyList.getAllTimeHigh()%></td>
+				<td><%=currencyList.getSymbol()%></td>
+				<td><img src="<%=currencyList.getLogo()%>"></td>
 			</tr>
 			<%
 			}

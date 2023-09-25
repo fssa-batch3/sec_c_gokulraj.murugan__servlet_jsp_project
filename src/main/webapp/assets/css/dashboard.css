@@ -1,0 +1,437 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: #EDF3FD;
+	width: 1440px;
+	height: 900px;
+}
+
+/* content starts */
+.content {
+	margin-left: 350px;
+	margin-top: 1%;
+	width: 750px;
+	height: 840px;
+	/* border: 1px solid black; */
+	padding: 2%;
+	z-index: 3;
+}
+
+.content .sec-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 50px 0px 20px;
+}
+
+.content .sec-2 {
+	background-color: #4062ff;
+	border-radius: 15px;
+	width: 100%;
+	height: 280px;
+	margin: 50px 10px 10px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.para {
+	text-align: start;
+	margin: 20px;
+	color: white;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	margin-top: -8%;
+	padding: 10px;
+}
+
+.para p {
+	margin: 5px;
+}
+
+#phone {
+	/* margin-bottom: 60px;
+    margin-right: -50px; */
+	width: 280px;
+	margin-bottom: 50px;
+}
+
+#trans_details {
+	padding: 7px;
+	border-radius: 10px;
+	border-style: none;
+	background-color: #2696F9;
+	font-size: 18px;
+	margin-top: 13px;
+}
+
+.sec-2 .para a {
+	text-decoration: none;
+	color: white;
+}
+
+.sec-3 {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.icons {
+	display: flex;
+	margin-left: 60%;
+}
+
+.sec-3 i {
+	margin: 0px 5px 0px 10px;
+}
+
+#icon {
+	background-color: #4062ff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 28px;
+	padding: 7px;
+}
+
+.sec-4 {
+	display: flex;
+	border: 1px solid black;
+	/* padding: 20px;    */
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.sec-4 .exchang {
+	border: 1px solid black;
+	width: 500px;
+	height: 400px;
+	border-radius: 20px;
+}
+
+.sec-4 .option {
+	/* border: 1px solid black; */
+	width: 100%;
+	height: 70px;
+	display: flex;
+	/* align-items: center;
+    justify-content: space-evenly; */
+}
+
+.choose {
+	/* border: 1px solid black;  */
+	width: 50%;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.choose:focus {
+	background-color: #2696F9;
+}
+
+.input {
+	background-color: none;
+	border: none;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+
+#btn_sell {
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 10px 0px 0px 200px;
+	border-style: none;
+	background-color: white;
+}
+
+.sell {
+	border-radius: 10px;
+	border: 1px solid black;
+	margin: 20px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.flex {
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 19px;
+	border: 1px solid black;
+	border-radius: 30px;
+	height: 40px;
+	cursor: pointer;
+}
+select {
+	width: 100px;
+	border-radius: 30px;
+	height: 40px;
+	font-size : 18px;
+	background-color: #EDF3FD;
+	
+}
+
+/* content ends */
+.aside {
+	margin-left: 80%;
+	position: relative;
+	bottom: 850px;
+	left: -30px;
+	height: 900px;
+	/* border: 1px solid black; */
+	width: 350px;
+}
+
+.sec-5 {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.sec-5 i {
+	font-size: 20px;
+	color: gray;
+	margin-left: 30px;
+}
+
+.sec5-1 {
+	display: flex;
+	margin-left: 25%;
+}
+
+.sec-5 a {
+	text-decoration: none;
+	color: black;
+	margin: 5px;
+}
+
+.buy {
+	margin: 30px 0px 0px 10px;
+	font-size: 16px;
+}
+
+.sec-6 {
+	margin: 20px 0px 0px 15px;
+	color: gray;
+}
+
+.sec-7 {
+	background-color: #2696F9;
+	width: 350px;
+	height: 250px;
+	border-radius: 20px;
+	color: #EDF3FD;
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+.sec7-1 {
+	margin: 20px 0px 0px 15px;
+}
+
+.sec7-2 {
+	margin: 35px 0px 0px 15px;
+}
+
+.sec-8 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.sec-8 a {
+	text-decoration: none;
+	color: white;
+}
+
+.sec-8 .transfer {
+	background-color: #4062ff;
+	width: 170px;
+	height: 100px;
+	border-radius: 15px;
+	display: flex;
+}
+
+.small {
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	text-align: center;
+	color: #4062ff;
+	font-size: 30px;
+	padding: 5px;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.Transaction {
+	background-color: white;
+	width: 95%;
+	height: 100px;
+	/* box-shadow: 1px black; */
+	border-radius: 15px;
+	margin: 4%;
+	display: flex;
+	align-items: center;
+}
+
+.sec-9 {
+	margin: 20px 0px 0px 0px;
+}
+
+.sec-9 h2 {
+	margin: 0px 0px 0px 15px;
+}
+
+.img2 {
+	margin: 16px;
+}
+
+#profile_image {
+	border-radius: 50%;
+}
+
+.div {
+	width: 260px;
+	height: 100px;
+	border: 1px solid black;
+	margin: 15px 10px 10px 10px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+.logos {
+	margin: 0px 0px 0px 30px;
+	width: 25%;
+}
+
+.price {
+	color: grey;
+}
+
+.details {
+	margin-top: 10px;
+}
+
+.div1 {
+	margin-left: 25px;
+	text-align: center;
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+	/* border:  1px solid black; */
+	width: 390px;
+	border-radius: 10px;
+	height: 480px;
+	background-color: white;
+	overflow: hidden;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+}
+
+.currency {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 20px 0px 0px 0px;
+}
+
+.currency p {
+	font-size: 20px;
+	margin-left: -30px;
+}
+
+#close_btn {
+	font-size: 20px;
+	margin: 0px -30px 0px 0px;
+}
+
+#search {
+	height: 40px;
+	width: 300px;
+	margin: 20px 0px 0px 40px;
+}
+
+.coinss {
+	overflow: scroll;
+	height: 360px;
+	/* width: 100%; */
+}
+
+.one_coin {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 99%;
+	height: 60px;
+	margin: 10px 0px 2px 0px;
+}
+
+.one_coin:hover {
+	background-color: #D3D3D3;
+}
+
+.one_coin .img_logo {
+	margin-left: -20px;
+	width: 50px;
+	height: 50px;
+}
+
+.one_coin h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: -20px;
+}
+
+.one_coin p {
+	/* font-size: 15px; */
+	font-weight: 300;
+	margin-left: -20px;
+}
+
+/* pop up starts */
+/* scroll bar */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 0px;
+	background-color: #D3D3D3;
+}
+
+/* ::-webkit-scrollbar-track {
+    border-radius: 10px;
+} */
+::-webkit-scrollbar-thumb {
+	background-color: blue;
+	border-radius: 10px;
+}
+
