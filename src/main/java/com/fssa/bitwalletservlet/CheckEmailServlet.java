@@ -55,16 +55,8 @@ public class CheckEmailServlet extends HttpServlet {
 			String password = (String)request.getParameter("password");
 			boolean result = UserService.checkMailAndPassword(email,password);
 
-			if (email == null || "".equals(email)) {
-				out.println("Invalid Email");
-				response.sendRedirect("login.jsp?errorMessage=Invalid Email");
-			}
 			
-
-			else if (password == null || "".equals(password) || password.length() < 6) {
-				response.sendRedirect("login.jsp?errorMessage=Invalid Password");
-			} 			
-			else if(result) {
+			 if(result) {
 				
 				HttpSession session = request.getSession();
 				session.setAttribute("email", email);
@@ -73,9 +65,13 @@ public class CheckEmailServlet extends HttpServlet {
 				out.flush();
 			}
 			
-			out.println(result);
+	
 		} catch (InvalidInputException | DaoException e) {
-
+			System.out.println(e.getMessage());
+			
+			out.println(e.getMessage());
+			out.close();
+			out.flush();
 			e.printStackTrace();
 		}
 	}

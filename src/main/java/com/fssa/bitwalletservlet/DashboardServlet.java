@@ -54,6 +54,7 @@ public class DashboardServlet extends HttpServlet {
 			List<Currency> currencyList = CurrencyService.readCurrency();
 			System.out.println(currencyList.get(0).getName());
 			
+			System.out.println();
 			request.setAttribute("currencyList", currencyList);
 			
 			request.setAttribute("username", user.getUsername());

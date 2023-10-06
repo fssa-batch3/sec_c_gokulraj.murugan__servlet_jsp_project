@@ -35,7 +35,7 @@
 					<a href="./wallet.html">Detail Transaction</a>
 				</button>
 			</div>
-			<img src="../Assets/Images/illustration1.png" id="phone" alt="">
+			<img src="https://iili.io/JJk0sbs.png" id="phone" alt="">
 		</div>
 		<!-- <div class="sec-3">
         </div> -->
@@ -74,7 +74,7 @@
 						</div>
 						<div class="flex">
 
-							<p> &#8377; </p>
+							<p>&#8377;</p>
 							<p>INR</p>
 
 						</div>
@@ -90,7 +90,7 @@
 		</div>
 	</div>
 
-   
+
 
 
 	<div class="aside">
@@ -142,7 +142,7 @@
 		<div class="sec-9">
 			<h2>Top Coins</h2>
 			<div class="Transaction">
-				<img src="../Assets/Images/Logo/eth.png" width="20%" class="img2"
+				<img src="assets/Images/Logo/eth.png" width="20%" class="img2"
 					alt="">
 				<div class="para1">
 					<h4>Ether</h4>
@@ -150,7 +150,7 @@
 				</div>
 			</div>
 			<div class="Transaction">
-				<img src="../Assets/Images/Logo/btc.png" width="20%" alt=""
+				<img src="assets/Images/Logo/btc.png" width="20%" alt=""
 					class="img2">
 				<div class="para1">
 					<h4>Bitcoin</h4>
@@ -158,7 +158,7 @@
 				</div>
 			</div>
 			<div class="Transaction">
-				<img src="../Assets/Images/Logo/sol.png" width="20%" class="img2"
+				<img src="assets/Images/Logo/sol.png" width="20%" class="img2"
 					alt="">
 				<div class="para1">
 					<h4>Dodge coin</h4>
@@ -176,7 +176,7 @@
 		</div>
 	</div>
 
-	
+
 
 
 

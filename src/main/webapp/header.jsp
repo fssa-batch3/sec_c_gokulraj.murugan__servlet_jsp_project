@@ -19,7 +19,7 @@
 						class="fa-solid fa-house"></i>
 				</span> <span class="title">Home</span>
 			</a></li>
-			<li><a href="#" > <span class="icon"> <i
+			<li><a href="./exchange.jsp" diabled> <span class="icon"> <i
 						class="fa-solid fa-arrows-rotate"></i>
 				</span> <span class="title">Exchange</span>
 			</a></li>

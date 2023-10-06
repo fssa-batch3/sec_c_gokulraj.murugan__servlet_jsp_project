@@ -247,3 +247,9 @@ body {
 .phone h5{
     margin-left: 280px;
 }
+
+#myChart{
+	width:1200px;
+	max-width:550px;
+	height:800px
+}

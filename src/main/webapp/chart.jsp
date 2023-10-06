@@ -33,7 +33,7 @@
 			%>
 
 			<a
-				href="<%=request.getContextPath()%>/statics.jsp?symbol=<%=ele.getSymbol()%> "
+				href="<%=request.getContextPath()%>/statics.jsp?symbol=<%=ele.getSymbol()%>&logo=<%=ele.getLogo()%>"
 				class="link">
 				<div class="box">
 					<img src="<%=ele.getLogo()%>" width="25%" alt="error_found"

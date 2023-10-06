@@ -27,7 +27,7 @@
 			<div class="profile_details">
 
 
-				<form action="" id="form">
+				<form action="ProfileUpdateServlet" id="form" method="post">
 
 					<%
 					User user = (User) request.getAttribute("user");
@@ -37,33 +37,37 @@
 					<div class="form-group row " style="margin-top: 10px;">
 						<label for="username" class="col-sm-4 col-form-label">UserName</label>
 						<div class="col-sm-7">
-							<input type="text" readonly class="form-control"
-								name="username id="username"
+							<input type="text"  class="form"
+								name="username" id="username"
                                 placeholder="User Name"
-								value="<%=user.getUsername()%>">
+								value="<%=user.getUsername()%>" disabled>
 						</div>
 					</div>
 					<div class="form-group row" style="margin-top: 10px;">
 						<label for="email" class="col-sm-4 col-form-label">Email</label>
 						<div class="col-sm-8">
-							<input type="text" readonly class="form-control" name="email"
-								id="staticEmail" placeholder="Email" value="<%=user.getEmail()%>">
+							<input type="text"  class="form" name="email"
+								id="staticEmail" placeholder="Email"
+								value="<%=user.getEmail()%>" disabled>
 						</div>
 					</div>
 					<div class="form-group row" style="margin-top: 10px;">
 						<label for="dob" class="col-sm-4 col-form-label">Date Of
 							Birth</label>
 						<div class="col-sm-7">
-							<input type="date" readonly class="form-control" id="dob"
-								placeholder="dob" value="<%=user.getDOB()%>">
+							<input type="date" name="dob" class="form" id="dob"
+								placeholder="dob" value="<%=user.getDOB()%>" disabled>
 						</div>
 					</div>
 					<%
-					} 
+					}
 					%>
 
-					<button id="btn1">Edit</button>
+
+					<button id="btn2" type="submit">Save</button>
+
 				</form>
+				<button id="btn1">Edit</button>
 			</div>
 
 		</div>
@@ -75,6 +79,8 @@
 		crossorigin="anonymous" integrity="">
 		
 	</script>
+
+<script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/Profile.js"></script>
 
 
 </body>

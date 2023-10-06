@@ -17,18 +17,18 @@ import com.fssa.bitwallet.model.User;
 import com.fssa.bitwallet.service.UserService;
 
 /**
- * Servlet implementation class SignUpServlet
+ * Servlet implementation class ProfileUpdateServlet
  */
-@WebServlet("/SignUpServlet")
-public class SignUpServlet extends HttpServlet {
+@WebServlet("/ProfileUpdateServlet")
+public class ProfileUpdateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public SignUpServlet() {
+	public ProfileUpdateServlet() {
 		super();
-
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -37,7 +37,7 @@ public class SignUpServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
@@ -49,19 +49,23 @@ public class SignUpServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		PrintWriter out = response.getWriter();
-
-		String userName = request.getParameter("username");
+		
+		String name = (String) request.getParameter("username");
+		String DOB = request.getParameter("dob");
 		String email = request.getParameter("email");
-		String DOB = request.getParameter("date_of_birth");
-		String password = request.getParameter("password");
-
+		
 		DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		LocalDate dateOfBirth = LocalDate.parse(DOB, dateFormatter);
 
-		User user = new User(userName, email, password, dateOfBirth);
+		
+		User user = new User();
+		user.setUsername(name);
+		user.setDOB(dateOfBirth);
+		user.setEmail(email);
+		
 
 		try {
-			boolean result = UserService.addUser(user);
+			boolean result = UserService.updateUser(user);
 			out.print(result);
 			out.close();
 			out.flush();
@@ -70,6 +74,7 @@ public class SignUpServlet extends HttpServlet {
 			response.getWriter().append(e.getMessage());
 			e.printStackTrace();
 		}
+
 	}
 
 }

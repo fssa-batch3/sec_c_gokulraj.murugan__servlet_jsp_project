@@ -17,10 +17,10 @@
 			</h5>
 		</div>
 		<div class="h2">
-			<h2>Sign In</h2> 	
+			<h2>Sign In</h2>
 		</div>
 
-		<form id="form" method="post">
+		<form id="form">
 
 			<label for="email">Email :</label> <input type="email" name="email"
 				id="email" placeholder="Email" required> <br> <label
@@ -41,7 +41,7 @@
 		crossorigin="anonymous" integrity="">
 	
     </script>
-    	<script src="assets/js/sweetalert.min.js"></script>
+	<script src="assets/js/sweetalert.min.js"></script>
 	<script>
     	
 	
@@ -68,14 +68,14 @@
     
 	axios.post(url)
     .then(function(response){
-    	console.log(response);
+    	console.log(response.data);
     	if(response.data==true){
         	 swal("success!", "Susccessfully Logged In", "success");
-        	 window.location.href = "http://localhost:8080/bitwallet/ReadProfileServlet";
+        	 window.location.href =  base+"/bitwallet/ReadProfileServlet";
         	
          }
          else{
-        	 swal("Failed!", "Email doesn't exits", "error"); 
+        	 swal("Failed!", response.data, "error"); 
          }
     })
     }

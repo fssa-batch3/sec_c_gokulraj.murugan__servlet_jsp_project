@@ -11,22 +11,30 @@
             const password = document.getElementById("password").value
             const confirm_password = document.getElementById("confirm_password").value;
             
-           
       
-            const url = "http://localhost:8080/bitwallet/SignUpServlet?username="+user_name+"&email="+email+"&date_of_birth="+dob+"&password="+password;
+      		const base = location.originl;     
+      
+            const url = base+"/bitwallet/SignUpServlet?username="+user_name+"&email="+email+"&date_of_birth="+dob+"&password="+password;
 			console.log(url);
+			
+			if(password == confirm_password){
             axios.post(url)
             .then(function(response){
             	console.log(response);
             	if(response.data==true){
                 	 swal("success!", "Susccessfully created account", "success");
-                	window.location.href= "http://localhost:8080/bitwallet/login.jsp";
+                	window.location.href= base+"/bitwallet/login.jsp";
                 	  
                  }
                  else{
-                	 swal("Failed!", "email already registerd", "error"); 
+                	 swal("Failed!", response.data, "error"); 
                  }
             })
+            }
+            else{
+				
+				swal("Failed!", "password and confirm password should be same", "error");
+			}
             
            
         }
