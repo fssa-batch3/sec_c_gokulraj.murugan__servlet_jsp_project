@@ -5,20 +5,20 @@ let card_detail = [
     {
         "title": "Crypto",
         "description": "A cryptocurrency is a cryptocurrency that has a unique name and symbol.",
-        "image": "../Assets/Images/crypto.jpg",
+        "image": "../assets/Images/crypto.jpg",
         "link"  : "../Pages/crypto.html"
 
     },
     {
         "title": "Blockchain",
         "description": "A blockchain is a cryptocurrency that has a unique name and symbol.",
-        "image": "../Assets/Images/block2.jpg",
+        "image": "../assets/Images/block2.jpg",
         "link"  : "../Pages/blockchain.html"
     },
     {
         "title": "NFT",
         "description": "A blockchain is a cryptocurrency that has a unique name and symbol.",
-        "image": "../Assets/Images/nft.jpg",
+        "image": "../assets/Images/nft.jpg",
         "link"  : "../Pages/nft.html"
     },
 ]

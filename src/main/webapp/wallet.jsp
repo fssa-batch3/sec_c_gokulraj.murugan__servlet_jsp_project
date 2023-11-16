@@ -20,7 +20,6 @@
 			<h2>
 				<i class="fa-solid fa-wallet"></i>Your Wallet
 			</h2>
-			<a href="../Pages/my_sell.html" id="my_sell">My Activites</a>
 		</div>
 		<hr class="line">
 		<div class="boxes" style="display: flex;">
@@ -63,7 +62,7 @@
 					%>
 					<div class="one_detail">
 						<div class="seller_details">
-							<h3 class="seller_username"><%=ele.getSellerId()%></h3>
+							<h3 class="seller_username"><%=ele.getTransactionMethod()%></h3>
 						</div>
 						<h4 class="method"><%=ele.getTransactionType()%></h4>
 						<h4 class="time"><%=ele.getTransactionTime()%></h4>

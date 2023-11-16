@@ -180,11 +180,26 @@ tbody tr:hover {
     text-align: center;
 
 }
+    .right_box{
+    	display:none;
+        width: 100%;
+        border: 1px solid black;
+        height: 400px;
+        margin-top: 70px;
+    }
+
 
 .table_scroll{
     height: 500px;
     overflow: scroll
 }
+
+.buy_button{
+	
+	border: none;
+	background-color : white;
+}
+
 
 /* scroll bar */
 

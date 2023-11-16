@@ -66,10 +66,11 @@ public class ProfileUpdateServlet extends HttpServlet {
 
 		try {
 			boolean result = UserService.updateUser(user);
-			out.print(result);
-			out.close();
-			out.flush();
-
+			
+			if(result) {
+				
+				response.sendRedirect("ReadProfileServlet");
+			}
 		} catch (InvalidInputException | DaoException e) {
 			response.getWriter().append(e.getMessage());
 			e.printStackTrace();

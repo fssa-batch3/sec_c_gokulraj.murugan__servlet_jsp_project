@@ -70,7 +70,7 @@ public class PaymentMethodServlet extends HttpServlet {
 
 			BalanceService.addBalance(balance);
 
-			response.sendRedirect("./dashboard.jsp");
+			response.sendRedirect("./DashboardServlet");
 		} catch (DaoException | InvalidInputException e) {
 
 			e.printStackTrace();

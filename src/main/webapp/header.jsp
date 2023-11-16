@@ -12,14 +12,14 @@
 	<div class="navigation">
 		<div>
 			<img src="assets/Images/logo.png" width="90%" id="logo"
-				alt="">
+				alt="bitwallet_logo">
 		</div>
 		<ul>
 			<li><a href="<%request.getContextPath();%>/bitwallet/DashboardServlet"> <span class="icon"> <i
 						class="fa-solid fa-house"></i>
 				</span> <span class="title">Home</span>
 			</a></li>
-			<li><a href="./exchange.jsp" diabled> <span class="icon"> <i
+			<li><a href="./upcomingfeature.jsp" disabled> <span class="icon"> <i
 						class="fa-solid fa-arrows-rotate"></i>
 				</span> <span class="title">Exchange</span>
 			</a></li>
@@ -35,7 +35,7 @@
 						class="fa-solid fa-user"></i>
 				</span> <span class="title">Profile</span>
 			</a></li>
-			<li><a href="./blog.jsp"> <span class="icon"> <i
+			<li><a href="./upcomingfeature.jsp"> <span class="icon"> <i
 						class="fa-solid fa-book"></i>
 				</span> <span class="title">Blog</span>
 			</a></li>

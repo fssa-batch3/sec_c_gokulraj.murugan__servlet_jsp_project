@@ -30,7 +30,7 @@
 	<jsp:include page="header.jsp"></jsp:include>
 	<div class="all">
 		<h1>Error Page</h1>
-		<p>404</p>
+		<p>Upcoming Feature</p>
 		<p>
 			Please go to <a href="dashboard.jsp">home</a> page
 		</p>

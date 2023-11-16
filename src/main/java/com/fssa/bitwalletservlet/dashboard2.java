@@ -43,7 +43,16 @@ public class dashboard2 extends HttpServlet {
 
 			JSONArray currencyJson = new JSONArray(currencyList);
 
-			response.setContentType("application/json");
+			
+			String currencyJsonString = currencyJson.toString();
+
+	        // Set the JSON data as an attribute in the request
+	        request.setAttribute("currencyJson", currencyJsonString);
+
+	        // Forward the request to the JSP page
+	        RequestDispatcher dispatcher = request.getRequestDispatcher("/dashboard2.jsp");
+	        dispatcher.forward(request, response);
+
 
 		} catch (DaoException e) {
 			e.printStackTrace();

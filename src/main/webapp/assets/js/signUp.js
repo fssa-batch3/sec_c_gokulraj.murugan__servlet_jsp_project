@@ -12,7 +12,7 @@
             const confirm_password = document.getElementById("confirm_password").value;
             
       
-      		const base = location.originl;     
+      		const base = location.origin;     
       
             const url = base+"/bitwallet/SignUpServlet?username="+user_name+"&email="+email+"&date_of_birth="+dob+"&password="+password;
 			console.log(url);
@@ -22,7 +22,9 @@
             .then(function(response){
             	console.log(response);
             	if(response.data==true){
+					
                 	 swal("success!", "Susccessfully created account", "success");
+                	 
                 	window.location.href= base+"/bitwallet/login.jsp";
                 	  
                  }
@@ -37,7 +39,7 @@
 			}
             
            
-        }
+       }
 
         const form = document.getElementById("form");
         form.addEventListener("submit", e => {

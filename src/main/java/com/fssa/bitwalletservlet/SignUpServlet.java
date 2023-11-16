@@ -66,6 +66,7 @@ public class SignUpServlet extends HttpServlet {
 			out.close();
 			out.flush();
 
+			
 		} catch (InvalidInputException | DaoException e) {
 			response.getWriter().append(e.getMessage());
 			e.printStackTrace();

@@ -13,7 +13,7 @@
 			<a href="./index.html"> <i class="fa-solid fa-arrow-left"></i>
 			</a>
 			<h5>
-				Already member? <a href="" id="Sign_up">Login</a>
+				Already member? <a href="./login.jsp" id="Sign_up">Login</a>
 			</h5>
 		</div>
 		<%
@@ -46,6 +46,7 @@
 					pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 					title="Enter a Uppercase,a lowercase, a number,a special character"
 					required> <br>
+					
 				<button type="submit" id="btn">Sign up</button>
 			</div>
 		</form>

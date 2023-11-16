@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ page import="com.fssa.bitwallet.model.Currency"%>
+<%@ page import="com.fssa.bitwallet.model.User"%>
+<%@ page import="com.fssa.bitwallet.service.UserService"%>
 <%@ page import="java.util.*"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,10 +22,8 @@
 	<div class="all">
 		<div class="head">
 
-			<input type="search" name="search" id="search">
-			<button id="addprod_btn" class="btn btn-outline-primary"
-				type="button">Add Coin</button>
-
+			
+		
 		</div>
 		<div class="boxes">
 
@@ -79,9 +80,6 @@
 								placeholder="Logo" name="logo"> <br>
 						</div>
 					</div>
-
-					<button type="submit" class="btn btn-outline-primary"
-						id="addproduct">Add</button>
 				</form>
 			</div>
 

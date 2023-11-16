@@ -165,14 +165,6 @@
 					<p id="dogecoin"></p>
 				</div>
 			</div>
-			<div class="Transaction">
-				<img src="../Assets/Images/Logo/ltc.png" width="20%" class="img2"
-					alt="">
-				<div class="para1">
-					<h4>lite coin</h4>
-					<p id="litecoin"></p>
-				</div>
-			</div>
 		</div>
 	</div>
 
